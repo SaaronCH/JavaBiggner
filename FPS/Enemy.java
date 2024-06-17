@@ -8,8 +8,8 @@ import javax.swing.*;
 
 public class Enemy extends JPanel {
     Random randomNum =new Random();
-    int x= randomNum.nextInt(500);
-    int y=0;
+    int x= randomNum.nextInt(1000);
+    int y=randomNum.nextInt(500);
     Image   image;
 
     Enemy()
@@ -18,7 +18,7 @@ public class Enemy extends JPanel {
         image =ImageIO.read(new File("./bomb.png"));
             
         } catch (Exception e) {
-            // TODO: handle exception
+            
         }
     }
     public void paintComponent(Graphics g) {
